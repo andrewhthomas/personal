@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		{{ with .Site.Params.name }}<meta name="author" content="{{ . }}">{{ end }}
+    	{{ if .IsHome }}{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}{{ else }}<meta name="description" content="{{ .Description }}">{{ end }}
+    	{{ with .Site.LanguageCode }}<meta http-equiv="content-language" content="{{ . }}">{{ end }}
+
+		{{ .Hugo.Generator }}
+    <script src="https://use.typekit.net/vbg2jll.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+		<link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+		{{ range .Site.Params.custom_css }}
+		<link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
+		{{ end }}
+	</head>

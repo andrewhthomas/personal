@@ -1,0 +1,16 @@
+{{ partial "head" . }}
+<body class="hack dark-grey">
+  <div class="uk-offcanvas-content">
+    {{ partial "header" . }}
+    <div id="main">
+      <section id="body">
+        <div class="container">
+          {{ block "main" . }}{{ end }}
+        </div>
+      </section>
+    </div>
+
+    {{ partial "footer" . }}
+  </div>
+</body>
+</html>

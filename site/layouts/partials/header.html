@@ -1,7 +1,21 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Hugo with Gulp and Webpack</title>
-    <link rel="stylesheet" href="/css/main.css"/>
-  </head>
-  <body>
+{{ "<!-- Header -->" | safeHTML }}
+
+<header id="header">
+  <div class="container">
+  <div class="header--inner">
+  <a class="logo left" href="/">Andrew H. Thomas</a>
+  {{ with .Site.Menus.main }}
+    <nav class="main-nav">
+      <ul>
+        {{ range . }}
+        <li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+</nav>
+  {{ end }}
+
+  </div>
+
+</div>
+
+</header>

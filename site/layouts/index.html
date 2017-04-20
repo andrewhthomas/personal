@@ -1,5 +1,45 @@
-{{ partial "header" . }}
+{{ define "main" }}
 
-<h1>Hugo with Gulp, PostCSS and Webpack</h1>
 
-{{ partial "footer" . }}
+<h1>Hi, and thanks for stopping by!</h1>
+<p>I build websites with Drupal, WordPress, Grav, and a variety of other great open source software. I design HTML5 themes and templates with Sass and Less, and use Gulp as my task runner.</p>
+<p>Right now I'm focusing on learning React and brushing up on my Laravel skills.</p>
+<p>I currently work for the publishing services firm Scribe Inc.</p>
+<div class="grid -baseline -left">
+<div class="cell -4of12">
+<div class="card">
+<header class="card-header">Languages</header>
+<div class="card-content">
+<div class="inner">PHP, JavaScript, HTML5, Less, Sass, XML</div>
+</div>
+</div>
+</div>
+<div class="cell -4of12">
+<div class="card">
+<header class="card-header">CMS</header>
+<div class="card-content">
+<div class="inner">Drupal 7/8, WordPress, Craft, Grav, Kirby, Middleman, Jekyll</div>
+</div>
+</div>
+</div>
+</div>
+<div class="grid -baseline -left">
+<div class="cell -6of12">
+<div class="card">
+<header class="card-header">Frameworks</header>
+<div class="card-content">
+<div class="inner">Laravel, CakePHP, jQuery, Bootstrap, Foundation</div>
+</div>
+</div>
+</div>
+<div class="cell -4of12">
+<div class="card">
+<header class="card-header">Tech</header>
+<div class="card-content">
+<div class="inner">Gulp, Grunt, JSON, YAML, nginx, Apache, MySQL, Git, Windows, Ubuntu</div>
+</div>
+</div>
+</div>
+
+
+{{ end }}

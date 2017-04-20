@@ -1,1 +1,18 @@
-@import "imports/reset.css";
+@import "../../node_modules/hack/dist/hack.css";
+@import "../../node_modules/hack/dist/dark-grey.css";
+
+
+.hack, .hack blockquote, .hack code, .hack em, .hack h1, .hack h2, .hack h3, .hack h4, .hack h5, .hack h6, .hack strong {
+    //font-size: 14px;
+    font-family: "fira-mono-1","fira-mono-2", Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+}
+
+
+
+.header--inner {
+    padding: 3rem 0;
+}
+
+.hack hr:after {
+    content: "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------";
+}
